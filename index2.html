@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Teko" rel="stylesheet">
 	<link rel="stylesheet" href="global.css">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<title>SpaceX-screen</title>
 </head>
 <body>
@@ -19,33 +20,68 @@
 		<div  class="conditions">
 		<div class="conditions-block">
 			<div class="pressure">Pressure</div>
+			<div class="pressure-units">
 			<div class="numbers">14.5</div>
-			<div><i class="icon"></i></div>
+			<div class="dimension">PSI</div>
+			</div>
+			<div class="border-line">
+					<div class="line-top"></div>
+					<div class="line-bottom"></div>
+					<div class="white-line white-line-center"></div>
+			</div>
 			<div><span>Stable</span></div>
 		</div>
 		<div class="conditions-block">
 			<div class="pressure">Temperature</div>
+			<div class="pressure-units">
 			<div class="numbers">70.1</div>
-			<div><i class="icon"></i></div>
+			<div class="dimension">F</div>
+			</div>
+			<div class="border-line">
+					<div class="line-top"></div>
+					<div class="line-bottom"></div>
+					<div class="white-line white-line-center"></div>
+			</div>
 			<div><span>Stable</span></div>
 		</div>
 		<div class="conditions-block">
 			<div class="pressure">O2-Levels</div>
+			<div class="pressure-units">
 			<div class="numbers">20.2</div>
-			<div><i class="icon"></i></div>
+			<div class="dimension">%</div>
+			</div>
+			<div class="border-line">
+					<div class="line-top-dashed"></div>
+					<div class="line-bottom-dashed"></div>
+					<div class="white-dashed-line"></div>
+			</div>
 			<div><span>Stable</span></div>
 		</div>
 		<div class="conditions-block">
 			<div class="pressure">CO2-Levels</div>
+			<div class="pressure-units">
 			<div class="numbers">0.3</div>
-			<div><i class="icon"></i></div>
+			<div class="dimension">%</div>
+			</div>
+			<div class="border-line">
+					<div class="line-top-dashed"></div>
+					<div class="line-bottom-dashed"></div>
+					<div class="white-dashed-line"></div>
+			</div>
 			<div><span>Stable</span></div>
 		</div>
 		<div class="conditions-block">
 			<div class="pressure">O2-Trunk</div>
+			<div class="pressure-units">
 			<div class="numbers">87</div>
-			<div><i class="icon"></i></div>
-			<div><span>Stable</span></div>
+			<div class="dimension">%</div>
+			</div>
+			<div class="border-line">
+					<div class="line-top-dashed"></div>
+					<div class="line-bottom-dashed"></div>
+					<div class="white-dashed-line"></div>
+			</div>
+			<div><span>-0.15 kg/h</span></div>
 		</div>
 	    </div>
 		</section>
@@ -55,31 +91,62 @@
 		<div class="comunications">
 		<div class="recelvers recelvers-padding">
 			<div class="comunic">Comunications</div>
-			<div><span>Recelvers</span></div>
-			<div>TDRS 6</div>
-			<div>TDRS 6</div>
-			<div>TDRS 6</div>
+			<div class="recelv"><span>Recelvers</span></div>
+			<div class="tdrs">
+			<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+			<div class="tdrs-6">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
+			<div class="tdrs bold-line">
+			<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+			<div class="tdrs-6">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
+			<div class="tdrs bold-line">
+			<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+			<div class="tdrs-6">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
 		</div>
-		<div class="recelvers">
-			<br><div><span>Transmites</span></div>
-			<div>TDRS 6</div>
-			<div>TDRS 6</div>
-			<div>TDRS 6</div>
+		<div class="recelvers transmitters">
+			<br><div class="recelv"><span>Transmites</span></div>
+			<div class="tdrs">
+			<div class="tdrs-66">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
+			<div class="tdrs bold-line2">
+			<div class="tdrs-66">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
+			<div class="tdrs bold-line2">
+			<div class="tdrs-66">TDRS 6</div>
+			<div><i class="fas fa-dot-circle"></i></div>
+			</div>
 		</div>
 		</div>
 		<div class="computers">
 		<div class="computers-block">
 			<div>Computers</div>
-			<div>50:00:00</div>
-			<div><span>FC State</span></div>
+			<div><span>A ::: B ::: C</span></div>
+			<div class="computers-padding">50:00:00</div>
+			<div class="computers-padding"><span>FC State</span></div>
 			<div><span>Last FDIR State</span></div>
 		</div>
 		</div>
 		<div class="nitrox">
 		<div class="nitrox-block">
-			<div class="nitrox-reserve">Nitrox Reserves</div>
-			<div>Stable</div>
-			<div>
+			<div class="nitrox-reserve">
+			<div class="nitrox-block-reserve">
+			<div>Nitrox   Reserves</div>
+			<div>100 %</div>
+		    </div>
+			<div class="nitrox-border-line">
+					<div class="nitrox-line-top-dashed"></div>
+					<div class="nitrox-white-dashed-line"></div>
+			</div>
+			<div><span>Stable</span></div>
+			</div>
+			<div class="perigree">
 				<div><span>Perigree_Raise_Plan</span></div>
 				<div><span>FDIR_Init</span></div>
 			</div>
@@ -90,39 +157,24 @@
 
 		<section>
 		<div class="parametrs">
-		<div class="outlet">
-			<div class="outlet_img">
-				<div>Aaaaaaaaaa</div>
-				<div>Baaaaaaaaa</div>
-			</div>
-			<div class="outlet_systems">ALL SYSTEMS</div>
-		</div>
+		<img src="img/graph1.jpg" alt="#">
 		<div class="graphic">
-			<div class="graphic-condition">
-				<div class="thrusters">
-					<div>Thruster</div>
-					<i class="icon">Q1/Q2/Q3/Q4</i>
-				</div>
-				<div class="batteries">
-						<div class="fuel">FUEL</div>
-						<div class="linear-graphic">Graphic</div>
-						<div class="psi">PSI</div>
-				</div>
-				<div class="batteries">
-						<div class="fuel">BATTERIES</div>
-						<div class="linear-graphic">Graphic</div>
-						<div class="psi">Power Units</div>
-				</div>
+			<div class="graphic-block">
+				<img src="img/graph2.jpg" alt="#">
+				<img src="img/graph3.jpg" alt="#">
 			</div>
 			<div class="graphic-panel">
-				<div class="graphic-panel-point">LIFE SUPPORT</div>
-				<div class="graphic-panel-point">COMMUNICATION</div>
-				<div class="graphic-panel-point">AVIONICS</div>
-				<div class="graphic-panel-point">POWER</div>
-				<div class="graphic-panel-point">MORE</div>
+				<div class="graphic-panel-points">LIFE SUPPORT</div>
+				<div class="graphic-panel-points">COMMUNICATION</div>
+				<div class="graphic-panel-points">AVIONICS</div>
+				<div class="graphic-panel-points">POWER</div>
+				<div class="graphic-panel-points">
+				<div class="more">MORE</div>
+				<div><i class="fas fa-angle-right"></i></div>
+				</div>
+			</div>
 			</div>
 		</div>
-	    </div>
 		</section>
 
 		<section>
@@ -134,39 +186,15 @@
 
 		<section>
 		<div  class="structure-sheme">
-			<div class="pprv">PPRV</div>
-			<div class="chart">
-				<div>cabin
-					<div></div>
-					<div></div>
-				</div>
-				<div>cabin
-					<div></div>
-					<div></div>
-				</div>
-				<div>grafic</div>
-			</div>
+			<img class="graphic1" src="img/graph4.jpg" alt="#">
+			<img src="img/graph5.jpg" alt="#">
 	    </div>
 			
 		</section>
 
 		<section>
 		<div  class="automation-sheme">
-			<div class="dha">
-				<div>chart1</div>
-				<div>chart2</div>
-			</div>
-			<div class="chart">
-				<div>cabin
-					<div></div>
-					<div></div>
-				</div>
-				<div>cabin
-					<div></div>
-					<div></div>
-				</div>
-				<div>grafic</div>
-			</div>
+		<img src="img/graph55.jpg" alt="#">
 	    </div>
 		</section>
 		</div>
@@ -174,7 +202,10 @@
 
 	<footer>
 		<div id="footer-container" class="footer-block">
-			<div class="systems">SYSTEMS</div>
+			<div class="systems">
+			<div class="more">SYSTEMS</div>
+			<div><i class="fas fa-angle-up"></i></div>
+			</div>
 			<div class="systems">OVERVIEW</div>
 			<div class="systems">CABIN</div>
 			<div class="systems">CONSUMABLES</div>
